@@ -33,7 +33,7 @@ exit2.addEventListener("click", function (e) {
   menuImage.classList.toggle("is-active");
   navbar.classList.toggle("is-active");
 });
-
+// sticky container
 window.addEventListener("scroll", function () {
   var stickyDiv = document.getElementById("web-static");
   var stopStickySection = document.getElementById("static-end");
@@ -41,7 +41,7 @@ window.addEventListener("scroll", function () {
   var stickyDivHeight = stickyDiv.offsetHeight;
 
   if (stopSectionTop <= stickyDivHeight + 20) {
-    stickyDiv.style.position = "relative";
+    // stickyDiv.style.position = "relative"; bhai iss line ki koi zaroorat nhi hai.
     stickyDiv.style.top =
       window.scrollY + stopSectionTop - stickyDivHeight - 0 + "500px";
   } else {
@@ -50,7 +50,6 @@ window.addEventListener("scroll", function () {
     stickyDiv.style.opacity = "1";
   }
 });
-
 /*Copy Clipboard*/
 // script.js
 document.getElementById("tailwind-link").addEventListener("click", function () {
